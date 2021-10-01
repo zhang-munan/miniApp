@@ -1,0 +1,151 @@
+<view class="proDetail">
+    <view class="proDetail_back" style="top:{{statusBarHeight}}px" bind:tap="navigateBack">
+        <i class="iconfont icon-sacha back_icon"></i>
+    </view>
+    <view class="proDetail_body">
+        <image class="proDetail_img"
+               src="https://images.unsplash.com/photo-1621609764095-b32bbe35cf3a?ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"></image>
+    </view>
+    <view class="proDetail_header">
+        <view class="containerMiddle">
+            <view class="proDetail_avatar" style="margin-right: 20rpx;">
+                <image class="proDetail_avatar_img" src="../../../assets/image/java.png"></image>
+            </view>
+            <view class="proDetail_header_info">
+                <view class="proDetail_header_name">
+                    Flow 由 Moleskine Studio 呈现
+                </view>
+                <view class="proDetail_header_keyWord">
+                    素描。思考。创作
+                </view>
+            </view>
+        </view>
+        <view class="">
+            <view class="proDetail_get" bind:tap="toConsumptionPage">购买</view>
+            <view class=""></view>
+        </view>
+    </view>
+    <scroll-view class="proDetail_basicInfo_scroll" scroll-x="true" style="width: 100%">
+        <view class="proDetail_basicInfo">
+            <view class="proDetail_basicInfo_block">
+                <view class="proDetail_basicInfo_title">
+                    语言
+                </view>
+                <view class="proDetail_basicInfo_content" style="border-left: none">
+                    Java
+                </view>
+            </view>
+            <view class="proDetail_basicInfo_block">
+                <view class="proDetail_basicInfo_title">
+                    语言
+                </view>
+                <view class="proDetail_basicInfo_content">
+                    Java
+                </view>
+            </view>
+            <view class="proDetail_basicInfo_block">
+                <view class="proDetail_basicInfo_title">
+                    语言
+                </view>
+                <view class="proDetail_basicInfo_content">
+                    Java
+                </view>
+            </view>
+            <view class="proDetail_basicInfo_block">
+                <view class="proDetail_basicInfo_title">
+                    语言
+                </view>
+                <view class="proDetail_basicInfo_content">
+                    Java
+                </view>
+            </view>
+            <view class="proDetail_basicInfo_block">
+                <view class="proDetail_basicInfo_title">
+                    语言
+                </view>
+                <view class="proDetail_basicInfo_content">
+                    Java
+                </view>
+            </view>
+            <view class="proDetail_basicInfo_block">
+                <view class="proDetail_basicInfo_title">
+                    语言
+                </view>
+                <view class="proDetail_basicInfo_content">
+                    Java
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+    <view class="proDetail_info">
+        <view class="proDetail_introduce">
+            <text>秉承Moleskin品牌的卓越品质，《Flow由Moleshkin Studio呈现》 在设计方面也极尽巧思。</text>
+        </view>
+        <view class="proDetail_introduce">
+            <text>这款绘画App曾荣获2019年度Apple Dedign Award。了解并用好以下功能，相信你会感受到它的强大之处。</text>
+        </view>
+
+        <view class="step">
+            <image class="proDetail_screenshot"
+                   src="https://images.unsplash.com/photo-1593642532842-98d0fd5ebc1a?ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"></image>
+            <view class="proDetail_describe">
+                <text>你可以根据自己的喜好轻松调整笔的种类。</text>
+            </view>
+        </view>
+
+        <view class="proDetail_h1">
+            <text>灵感，源源不断</text>
+        </view>
+        <view class="proDetail_introduce">
+            <text>不用担心空间不足，也不必停下手头的工作重新打开另一份文件，这款App的画布具有无限的宽度，你可以发挥想象尽情创作。</text>
+        </view>
+        <view class="proDetail_introduce">
+            <text>App还支持分屏浏览、画中画等功能，方便你对比、查阅、或是同时完成多项任务。</text>
+        </view>
+
+        <view class="step">
+            <image class="proDetail_screenshot"
+                   src="https://images.unsplash.com/photo-1627664220128-ff2232937726?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"></image>
+            <view class="proDetail_describe">
+                <text>选择你心中完美的蜜桃色。</text>
+            </view>
+        </view>
+
+        <view class="proDetail_h1">
+            <text>自定义笔列表</text>
+        </view>
+        <view class="proDetail_introduce">
+            <text>绘图时，搭配Apple Pencil使用，可以让效果更细腻，为Apple pencil和手指设置自定义手势后，用起来会更加得心应手。</text>
+        </view>
+
+    </view>
+
+    <view class="proDetail_buy">
+        <view class="proDetail_avatar" style="width: 130rpx;height: 130rpx">
+            <image class="proDetail_avatar_img" src="../../../assets/image/java.png"></image>
+        </view>
+        <view class="containerMiddle" style="flex-direction: column;">
+            <view class="proDetail_buy_title">
+                Flow 由 Moleskine Studio 呈现
+            </view>
+            <view class="proDetail_buy_keyWord">
+                素描。思考。创作。
+            </view>
+        </view>
+        <view class="proDetail_buyBind">
+            <view class="proDetail_buy_btn">
+                购买
+            </view>
+            <view class="proDetail_buy_money">
+                <font>$</font>300
+            </view>
+        </view>
+    </view>
+
+    <view class="proDetail_footer containerMiddle">
+        <view class="proDetail_btn containerMiddle">
+            <i class="iconfont icon-fenxiang share"></i>
+            <text>分享</text>
+        </view>
+    </view>
+</view>

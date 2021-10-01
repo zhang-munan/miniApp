@@ -1,0 +1,94 @@
+.user_info button {
+    color: #fff !important;
+    border: none !important;
+    font-weight: 200 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 30rpx !important;
+    display: flex;
+    align-items: center;
+}
+.user{
+    width: 100%;
+    height: 200rpx;
+    background: #fff;
+    padding-top: 60rpx;
+    background-size: cover;
+    background-position: center;
+}
+.user.user{
+    background-image: url("https://test.vtumap.com/referral_doc/userBg.jpg");
+}
+.user.worker{
+    background-image: url("https://test.vtumap.com/referral_doc/workerBg.jpg");
+}
+.user_info {
+    display: flex;
+    height: 100rpx;
+}
+.user_avatar {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+.user_obtain {
+    color: #fff;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.user_img{
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 100%;
+    margin: 0 20rpx;
+    background: #eee;
+}
+.user_detail{
+    color: #fff;
+}
+.user_detail_top{
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 2px;
+}
+.user_detail_more{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    padding-top: 3px;
+}
+.user_detail_more_item{}
+.list{
+    width: calc(100% - 20px);
+    margin: -20px 10px 0 10px;
+}
+.iconClass{
+    font-size: 28px;
+    margin-right: 20px !important;
+}
+.iconClass.red{
+    color: var(--danger);
+}
+.iconClass.work{
+    color: var(--primary);
+}
+.iconClass.collection{
+    color: var(--warning);
+}
+.iconClass.jianli{
+    color: blue;
+}
+.iconClass.change{
+    color: #4fbae5;
+}
+.iconClass.hot{
+    color: #e54fc0;
+}
+.iconClass.email{
+    color: #8d4fe5;
+}
+.iconClass.company{
+    color: #4fe5d4;
+}

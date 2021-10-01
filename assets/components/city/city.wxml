@@ -1,0 +1,11 @@
+<picker mode="multiSelector" class="CityBar" bindcolumnchange="bindcolumnchange" bindchange="bindchange" value="{{showCityValue}}" range="{{cityData}}" range-key="label">
+    <view class="CityBarCenter {{border?'is-border':''}}">
+        <view class="Vtuzx_Cell_Top_Must" wx:if="{{must}}"><i class="vtu-icon vtu-icon-bixutian"></i></view>
+        <view class="CityBar_Title">{{title}}</view>
+        <view class="CityBar_Value">
+            <font wx:if="{{cityValueLabel}}">{{cityValueLabel}}</font>
+            <block wx:else>{{placeholder}}</block>
+        </view>
+        <view class="CityBar_Arrow vtu-icon vtu-icon-right-copy"></view>
+    </view>
+</picker>

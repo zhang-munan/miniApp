@@ -1,0 +1,109 @@
+<template name="listInfoItem">
+    <view class="listInfoItem" wx:for="{{ pageInfo }}" wx:key="item">
+        <view class="listInfoItem_panel" hover-class="bg-hover">
+            <view class="listInfoItem_detail_action" bind:tap="{{ method }}" data-id="{{ type===2||type===3?item.postId:item.id }}" data-type="{{ type }}" data-item="{{item}}" data-companyName="{{companyName }}" data-companyId="{{companyId}}" data-jobid="{{ item.jobId }}">
+                <view class="listInfoItem_row_first">
+                    <view class="listInfoItem_title">
+                        <text>{{ item.positionName }}</text>
+                        <span class="icon iconfont icon-hongbao11 redPacket" wx:if="{{item.redPacketInfo && type === 1}}"></span>
+                        <vtu-tag wx:if="{{ type===2 && item.delivered }}" class="listInfoItem_tag" type="out"
+                                 bg-color="#1f8fee" shape="round" size="mini">已投递
+                        </vtu-tag>
+                    </view>
+                    <view wx:if="{{ (type === 0 || type === 1 || type === 3)&&item.createTime }}" class="listInfoItem_time_width">
+                        <text>{{ item.createTime }}</text>
+                    </view>
+                    <view wx:if="{{ type === 4 }}" class="listInfoItem_color_blue">
+                        <text>{{ item.salary }}</text>
+                    </view>
+                </view>
+                <view class="listInfoItem_row_time" wx:if="{{ type === 4 }}">
+                    <view class="listInfoItem_row_double">
+                        <view class="listInfoItem_item_i"><i class="iconfont icon-didian"></i>大连市</view>
+                        <view class="listInfoItem_item_i"><i class="iconfont icon-shijian"></i>无经验</view>
+                        <view class="listInfoItem_item_i"><i class="iconfont icon-xueli"></i>本科</view>
+                    </view>
+                    <view>
+                        <text>{{ item.createTime }}</text>
+                    </view>
+                </view>
+                <view class="listInfoItem_row_double listInfoItem_margin_bottom" wx:if="{{ type===4 }}">
+                    <view class="listInfoItem_welfare" wx:for="{{3}}" wx:key="">
+                        <text>五险一金</text>
+                    </view>
+                </view>
+                <view class="listInfoItem_row_labels" wx:if="{{ type!==4 }}">
+                    <view class="listInfoItem_row_labels_item listInfoItem_color_red">{{ item.salary }}</view>
+                    <view class="listInfoItem_row_labels_item">{{ item.city }}</view>
+                    <view class="listInfoItem_row_labels_item">{{ item.workEducation }}</view>
+                    <view class="listInfoItem_row_labels_item">{{ item.workYear }}</view>
+                </view>
+
+                <view class="listInfoItem_row_company" wx:if="{{item.companyInfo}}">
+                    <view class="listInfoItem_row_company_logo">
+                        <image src="/assets/image/company.png"></image>
+                    </view>
+                    <view class="listInfoItem_row_company_label">{{item.companyInfo.name}}</view>
+                    <view wx:if="{{ type === 0 && item.redPacketInfo }}" class="listInfoItem_row_company_redPacket">悬赏￥<font>{{item.redPacketInfo.countMoney}}</font></view>
+<!--                    <view class="listInfoItem_row_company_icon iconfont icon-jiantou-copy"></view>-->
+                </view>
+            </view>
+            <view wx:if="{{ type === 1 }}" class="listInfoItem_row_footer">
+                <view class="listInfoItem_row_footer_item">
+                    <view class="icon iconfont icon-liulan"></view>
+                    <view class="number">{{ item.viewCount||0 }}</view>
+                </view>
+                <view class="listInfoItem_row_footer_item">
+                    <view class="icon iconfont icon-fenxiang2"></view>
+                    <view class="number">{{ item.browse||21 }}</view>
+                </view>
+                <view class="listInfoItem_row_footer_item">
+                    <view class="icon iconfont icon-jianli3"></view>
+                    <view class="number">{{ item.deliverCount||0 }}</view>
+                </view>
+            </view>
+            <block wx:if="{{ type===2 }}">
+                <view class="listInfoItem_footer">
+                    <view class="listInfoItem_footer_btn" catch:tap="unFavorite" data-id="{{ item.postId }}">
+                        <text>取消收藏</text>
+                    </view>
+                    <view class="listInfoItem_footer_btn listInfoItem_color_right" catch:tap="toJobDetailPage" data-id="{{ item.postId }}" data-isHistory="{{ 0 }}">
+                        <text>投递简历</text>
+                    </view>
+                </view>
+            </block>
+            <block wx:if="{{ type===3 }}">
+                <view class="listInfoItem_footer_info">
+                    <view style="display:flex;">
+                        <view class="listInfoItem_color_black listInfoItem_name_width">
+                            <text>{{ item.name?item.name:'未知' }}</text>
+                        </view>
+                        <view>
+                            <text>{{ item.phone }}</text>
+                        </view>
+                    </view>
+                    <view class="listInfoItem_color_red">
+                        <text>{{ item.status||'待处理' }}</text>
+                    </view>
+                </view>
+            </block>
+        </view>
+    </view>
+</template>
+<template name="walletList">
+    <view class="walletList">
+        <view class="walletItem" wx:for="{{dataList}}" hover-class="walletItem_hover">
+            <view class="walletItem_info">
+                <view class="walletItem_label">
+                    <view class="walletItem_label_from">{{ item.source }}</view>
+                    <view class="walletItem_label_info">{{ item.content }}</view>
+                </view>
+                <view class="walletItem_money">￥<font>{{item.money}}</font></view>
+            </view>
+            <view class="walletItem_footer">
+                <view class="walletItem_footer_end">{{ item.days }}天后过期</view>
+                <view class="walletItem_footer_tile">有效期至{{item.deadline}}</view>
+            </view>
+        </view>
+    </view>
+</template>

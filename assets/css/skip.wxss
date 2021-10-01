@@ -1,0 +1,53 @@
+page{
+  /*默认颜色配置*/
+  --default: #fefeff;
+  --primary: #3079FC;
+  --primary-active: #5e6b5c;
+  --primary-light: #91c7ff;
+  --primary-dark: #004fbb;
+
+  --assist: #FF9933;
+  --assist-dark: #ea8a30;
+  --assist-light: #fffaed;
+
+  --success: #07c160;
+  --success-light: #f0f9eb;
+  --warning: #e6a23c;
+  --warning-light: #fde9d2;
+  --warning-dark: #ac6c0d;
+  --danger: #f44;
+  --danger-light: #fedde0;
+  --danger-dark: #b80e0e;
+  --info: #909399;
+
+  /*字体颜色配置*/
+  --font-ha: #303133;
+  --font-hb: #606266;
+  --font-hc: #909399;
+  --font-hd: #C0C4CC;
+  --font-disabled: #BBBBBB;
+
+  /*边框颜色配置*/
+  --border-ba: #d2d6de;
+  --border-bb: #E4E7ED;
+  --border-bc: #EBEEF5;
+  --border-bd: #F2F6FC;
+
+  /*全局背景颜色配置*/
+  --bg-page: #f8f8f9;
+  --bg-disabled: #e6e6e7;
+  --bg-btn: #e3e3e5;
+  --bg-describe: #e7e7e7;
+
+  --href: #44abde;
+  --href-dark: #388ab5;
+  --men: #2663ff;
+  --women: #ff559f;
+
+  /*全局圆角配置*/
+  --round: 10rpx;
+  --shadow: #eee;
+  --panelRound: 35rpx;
+  --itemShadow: 0 10rpx 35rpx #d2d6de;
+  --itemShadow-actice: 0 8rpx 25rpx #e1e4ea;
+}

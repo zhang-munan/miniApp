@@ -1,0 +1,7 @@
+<view class="navbar" style="background:{{isShowBackGround ? background : ''}};height:{{navbarHeight}}px;{{isShowBackGround ? 'border-bottom: 1rpx solid var(--border-ba);' : ''}}">
+    <view style="height:{{capsuleHeight}}px;top:{{capsuleTop}}px;" class="arrow_content">
+        <i class="iconfont icon-zuojiantou arrow" wx:if="{{isShowBack}}" date-delta="{{ delta }}" bindtap="handleGoToBack"></i>
+        <text class="to_back_text" wx:if="{{isShowBack}}" date-delta="{{ delta }}" bindtap="handleGoToBack">{{ backTitle }}</text>
+    </view>
+    <view class="text" wx:if="{{isShowBackGround}}" style="height:{{capsuleHeight}}px;top:{{capsuleTop}}px">{{title}}</view>
+</view>

@@ -1,0 +1,19 @@
+.gdxScroll {
+    position: fixed;
+}
+
+.gdxBottom {
+    height: 80rpx;
+    color: var(--info);
+}
+
+.person {
+    font-size: 50rpx;
+    color: var(--primary);
+}
+
+.containerMiddle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

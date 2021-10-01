@@ -1,0 +1,48 @@
+.consumption_header {
+    height: 45px;
+    width: calc(100% - 80rpx);
+    margin: auto;
+    font-size: 40rpx;
+    font-weight: 600;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.consumption_panel {
+    margin: auto;
+    width: calc(100% - 80rpx);
+}
+
+.consumption_row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20rpx 0;
+    border-bottom: 1rpx solid var(--border-ba);
+}
+
+.arrow {
+    color: var(--font-hb);
+}
+
+.consumption_row_title {
+    color: var(--font-hc);
+}
+
+.consumption_row_content {
+    color: var(--font-ha);
+}
+
+.consumption_msg {
+    color: var(--danger);
+    font-size: 35rpx;
+    position: relative;
+    top: 300rpx;
+    width: calc(100% - 80rpx);
+    left: 50%;
+    transform: translateX(-50%);
+    text-indent: 60rpx;
+}
+

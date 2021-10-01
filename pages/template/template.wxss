@@ -1,0 +1,257 @@
+/**
+* 红包记录
+**/
+.walletList{
+    width: calc(100% - 40px);
+    padding: 20px;
+}
+.walletItem{
+    border-radius: var(--round);
+    background: #fff;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 3px 1px var(--shadow);
+    background: linear-gradient(to bottom, #fc9c38 0%, #ee8b24 100%);
+    width: calc(100% - 40px);
+    padding: 20px;
+    color: #fff;
+}
+.walletItem_hover{
+    background: #ee8b24;
+}
+.walletItem_info{
+    border-radius: var(--round) var(--round) 0 0;
+    display: flex;
+}
+.walletItem_label{
+    flex: 1;
+}
+.walletItem_label_from{
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.walletItem_label_info{
+    font-size: 14px;
+}
+.walletItem_money{
+}
+.walletItem_money font{
+    font-size: 36px;
+    font-weight: bold;
+}
+.walletItem_footer{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    border-top: 1px solid #ffc48b;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+.walletItem_footer_end{
+    flex: 1;
+}
+.walletItem_footer_tile{}
+
+
+
+.listInfoItem_panel {
+    color: #808080;
+    display: flex;
+    font-size: 25rpx;
+    padding: 30rpx 40rpx 20rpx 40rpx;
+    flex-direction: column;
+    background-color: #fff;
+    justify-content: space-between;
+}
+.listInfoItem_detail_action {
+}
+.listInfoItem_row_first {
+    display: flex;
+    justify-content: space-between;
+}
+.Vtu_Tag {
+    margin: 0 0 0 10rpx !important;
+}
+.listInfoItem_row_time {
+    display: flex;
+    margin: 10px 0;
+    justify-content: space-between;
+}
+.listInfoItem_row_double {
+    display: flex;
+}
+.listInfoItem_margin_bottom {
+    margin-bottom: 10px;
+}
+.listInfoItem_item_i {
+    margin-right: 10px;
+    font-size: 12px;
+}
+.listInfoItem_item_i i{
+    color: var(--assist);
+    margin-right: 4px;
+}
+.listInfoItem_welfare {
+    padding: 5rpx 10rpx;
+    margin-right: 10rpx;
+    border-radius: 3px;
+    background-color: var(--bg-page);
+    color: var(--font-hb);
+    font-size: 12px;
+}
+
+.listInfoItem_split {
+    width: 30rpx;
+    text-align: center;
+}
+.listInfoItem_row_third {
+    height: 70rpx;
+    display: flex;
+    align-items: center;
+}
+.listInfoItem_avatar {
+    width: 70rpx;
+    height: 70rpx;
+    margin-right: 20rpx;
+    border-radius: 10rpx;
+    background-color: #3668e5;
+}
+.listInfoItem_reward {
+    position: absolute;
+    right: 40rpx;
+}
+.listInfoItem_reward_text {
+    color: var(--danger);
+    font-size: 28rpx;
+}
+.listInfoItem_reward_money {
+    font-size: 42rpx;
+}
+.listInfoItem_footer {
+    color: #808080;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-top: 1rpx solid var(--border-bd);
+    margin-top: 10px;
+}
+.listInfoItem_footer_btn {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 26rpx;
+    justify-content: center;
+}
+.listInfoItem_color_right {
+    color: #5e7eff;
+    border-left: 5rpx solid #faf9f9;
+}
+.listInfoItem_footer_info {
+    color: #808080;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 26rpx;
+    padding-top: 10px;
+    height: 20px;
+    border-top: 1rpx solid var(--border-bd);
+}
+.listInfoItem_name_width {
+    margin-right: 10px;
+}
+.listInfoItem_color_black {
+    color: #222;
+}
+.listInfoItem_color_blue {
+    color: #065ad7;
+}
+.listInfoItem_color_red {
+    color: var(--danger);
+}
+
+
+
+.listInfoItem {
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.listInfoItem_title  {
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--font-ha);
+    display: flex;
+    align-items: center;
+}
+.listInfoItem_title .redPacket{
+    color: red;
+    font-size: 20px;
+    font-weight: 400;
+}
+.listInfoItem_time_width {
+    min-width: 100px;
+    text-align: right;
+}
+.listInfoItem_row_labels {
+    display: flex;
+    align-items: center;
+    margin: 10px 0 0 0;
+}
+.listInfoItem_row_labels_item{
+    background: var(--bg-page);
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 5px;
+    margin: 0 5px 5px 0;
+}
+.listInfoItem_row_company{
+    display: flex;
+    padding: 8px 0;
+    align-items: center;
+}
+.listInfoItem_row_company_logo{
+    width: 20px;
+    height: 20px;
+    margin: 0 10px 0 5px;
+}
+.listInfoItem_row_company_logo image{
+    width: 100%;
+    height: 100%;
+}
+.listInfoItem_row_company_label{
+    font-size: 13px;
+    flex: 1;
+    color: var(--font-hb);
+}
+.listInfoItem_row_company_redPacket{
+    color: red;
+    font-size: 11px;
+}
+.listInfoItem_row_company_redPacket font{
+    font-weight: bold;
+    font-size: 18px;
+}
+.listInfoItem_row_company_icon{
+    color: var(--font-hc);
+}
+.listInfoItem_row_footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--border-bd);
+    padding-top: 10px;
+    margin-top: 10px;
+}
+.listInfoItem_row_footer_item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+.listInfoItem_row_footer_item .icon{
+    margin-right: 4px;
+    font-size: 18px;
+}
+.listInfoItem_row_footer_item .number{
+    font-size: 12px;
+}

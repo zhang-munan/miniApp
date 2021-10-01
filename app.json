@@ -1,0 +1,37 @@
+
+{
+  "pages": [
+    "pages/tab/home/home",
+    "pages/tab/my/my",
+    "pages/detail/proDetail/proDetail",
+    "pages/detail/consumption/consumption"
+  ],
+  "window": {
+    "navigationStyle": "custom",
+    "backgroundTextStyle": "dark",
+    "backgroundColorBottom": "#fff",
+    "backgroundColorTop": "#f8f8f9",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#908f94",
+    "selectedColor": "#3079FC",
+    "borderStyle": "black" ,
+    "backgroundColor": "#f3f3f3",
+    "list": [{
+      "text": "案例",
+      "selectedIconPath": "assets/image/anli1.png",
+      "iconPath": "assets/image/anli.png",
+      "pagePath": "pages/tab/home/home"
+    },{
+      "text": "定制",
+      "selectedIconPath": "assets/image/sheji1.png",
+      "iconPath": "assets/image/sheji.png",
+      "pagePath": "pages/tab/home/home"
+    }]
+  },
+  "usingComponents": {
+  }
+}

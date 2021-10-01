@@ -1,0 +1,52 @@
+<view class="">
+    <navbar id="navbar" background="#f3f3f3" title="购买" backTitle="返回" isShowBack></navbar>
+    <scroll-view class="gdxScroll" scroll-y="true"
+                 style="height:calc(100vh - {{ navbarHeight }}px);top:{{ navbarHeight }}px">
+        <view class="consumption_header">
+            <view class="consumption_title">
+                <text>信息</text>
+            </view>
+        </view>
+        <view class="consumption_panel">
+            <view class="consumption_row" data-number="secret966-" bindtap="bindCopyContent">
+                <view class="consumption_row_title">
+                    微信
+                </view>
+                <view class="consumption_row_content">
+                    secret966-
+                    <i class="iconfont icon-jiantou-copy arrow"></i>
+                </view>
+            </view>
+            <view class="consumption_row" data-number="2296859423" bindtap="bindCopyContent">
+                <view class="consumption_row_title">
+                    QQ
+                </view>
+                <view class="consumption_row_content">
+                    2296859423
+                    <i class="iconfont icon-jiantou-copy arrow"></i>
+                </view>
+            </view>
+            <view class="consumption_row" data-number="行走的蒲公英" bindtap="bindCopyContent">
+                <view class="consumption_row_title">
+                    淘宝店铺
+                </view>
+                <view class="consumption_row_content">
+                    行走的蒲公英
+                    <i class="iconfont icon-jiantou-copy arrow"></i>
+                </view>
+            </view>
+            <view class="consumption_row" data-number="15566287907" bindtap="bindCopyContent">
+                <view class="consumption_row_title">
+                    咸鱼
+                </view>
+                <view class="consumption_row_content">
+                    15566287907
+                    <i class="iconfont icon-jiantou-copy arrow"></i>
+                </view>
+            </view>
+        </view>
+        <view class="consumption_msg">
+            小程序不支持直接交易，如果你喜欢这个毕业设计，请添加联系方式（点击可复制内容）
+        </view>
+    </scroll-view>
+</view>

@@ -1,0 +1,8 @@
+@import '/assets/fonts/iconfont.wxss';
+@import '/assets/css/common.wxss';
+@import '/assets/css/skip.wxss';
+@import '/pages/template/template.wxss';
+
+page {
+    background-color: #f9f9f9;
+}

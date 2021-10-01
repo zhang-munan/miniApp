@@ -1,0 +1,27 @@
+<view class="home_body">
+    <navbar id="navbar" background="#f3f3f3" title="案例" backTitle="取消" ></navbar>
+    <scroll-view class="gdxScroll" scroll-y="true" bindscroll="bindScroll"
+                 style="height:calc(100vh - {{ navbarHeight }}px);top:{{ navbarHeight }}px">
+        <view class="home_header">
+            <view class="home_title">
+                <text>案例</text>
+            </view>
+            <view class="personal">
+                <i class="iconfont icon-geren3 person"></i>
+            </view>
+        </view>
+        <view class="home_container containerMiddle" wx:for="{{ exampleList }}" wx:key="item" data-id="{{ item.id }}"  bind:tap="toProDetailPage">
+            <view class="home_panel">
+                <image class="home_panel_img" src="{{ item.img }}"></image>
+                <view class="home_panel_info">
+                    <view class="home_panel_title">{{ item.title }}</view>
+                    <view class="home_panel_introduction">{{ item.introduction }}</view>
+                    <view></view>
+                </view>
+            </view>
+        </view>
+        <view class="gdxBottom containerMiddle">
+            敬请期待
+        </view>
+    </scroll-view>
+</view>
