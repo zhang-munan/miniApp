@@ -1,1 +1,1 @@
-# pumpkin-miniApp
+# miniApp
